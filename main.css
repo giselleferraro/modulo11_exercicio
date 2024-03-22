@@ -1,3 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: none;
+    font-family: "Flamenco", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1, h2 {
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
+
+p, h3 {
+    font-family: "Flamenco", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.navegation>img {
+    width: 120px;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    max-height: 100vh;
+    height: 100%;
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 2px 0;
+    background: #d1eaf9;
+    color: #fa34df;
+    font-size: large;
+}
+
+.navegation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 18px;
+    width: 100%;
+}
+
+.navegation ul {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.navegation ul>li {
+    list-style: none;
+}
+
+.navegation ul li a {
+    color: #fa34df;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.navegation ul li a:hover {
+    color: #ff0066ad;
+}
+
+.menu {
+    cursor: pointer;
+    display: none;
+}
+
+.loja {
+    align-items: center;
+}
+
+.loja .sobre-nos {
+    display: flex;
+    font-size: 1.2em;
+    margin-top: 37px;
+}
+
+.loja .sobre-nos img {
+    max-width: 500px;
+    margin-right: 20px;
+    margin-bottom: 2%;
+}
+
+.sobre-nos .text-sobre h2 {
+    margin-bottom: 32px;
+}
+
+.sobre-nos .text-sobre p {
+    text-align: justify;
+    margin-top: 3%;
+    padding-bottom: 3%;
+}
+
+.minha-grid ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 24.25%);
+    column-gap: 1%;
+    row-gap: 5%;
+}
+
+.minha-grid ul li img {
+    width: 100%;
+}
+
+
+.minha-grid h2 {
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background: #d1eaf9 ;
+    color: #fa34df;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+button:hover {
+    background-color: #fa34df;
+    color: #d1eaf9 ;
+}
+
+.container-flex li h3 {
+    font-size: 24px;
+}
+
+.container-flex li p {
+    font-size: 14px;
+    padding-block: 20px;
+}
+
+
+footer {
+    text-align: center;
+    padding-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    background-color: #d1eaf9;
+}
+
+
+/* Estilos específicos para telas até 640px */
+@media only screen and (max-width: 640px) {
+    .menu {
+        display: block;
+    }
+
+    .nav-menu {
+        position: fixed;
+        right: -100%;
+        top: 70px;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        background: var(--cor-secundaria);
+        gap: -10px;
+        transition: all 0.3s;
+    }
+
+    .nav-menu.ativo {
+        right: 0;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    .nav-item a {
+        text-decoration: none;
+        font-size: 17px;
+        font-weight: 500;
+    }
+
+
+    .loja {
+        display: block;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+
+    .loja .sobre-nos {
+        display: block;
+        font-size: 1em;
+        margin-top: 48px;
+    }
+
+    .loja .sobre-nos img {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 2%;
+    }
+
+    .minha-grid ul {
+        display: block;
+    }
+
+
+    .container-flex li h3 {
+        font-size: 32px;
+    }
+
+}
+
+/* Estilos específicos para telas maiores que 641px e menores que 1024px */
+@media only screen and (min-width: 641px)and (max-width: 1023px) {
+
+    .container {
+        max-width: 90%;
+
+    }
+
+    .loja {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .loja .sobre-nos {
+        display: block;
+    }
+
+    .loja .sobre-nos a img {
+        max-width: 100%;
+    }
+
+    .minha-grid .container-flex {
+        grid-template-columns: repeat(2, 49%);
+    }
+
+    .loja .sobre-nos img {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 2%;
+    }
+
+    .container-flex li h3 {
+        font-size: 32px;
+    }
+
+}
+
 /* Estilos específicos para telas até 640px */
 @media only screen and (max-width: 640px) {
     .menu {
