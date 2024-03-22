@@ -1,27 +1,95 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Módulo 07 - Exercício </title>
-    <link rel="stylesheet" href="./main.css" />
-</head>
+    <title>Meu Mundo Infantil ♥</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Flamenco:wght@300;400&family=Madimi+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
 
 <body>
+    <header>
+        <div class="container">
+            <nav class="navegation">
+                <h2>Meu Mundo Infantil ♥</h2>
+
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="">Sobre a loja</a></li>
+                    <li class="nav-item"><a href="">Produtos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     <div class="container">
-        <h1>Validação dos campos A e B</h1>
-        <h2> Informe um valor em que B seja maior que A</h2>
-        <form id="form-valor">
-            <input type="number" id="campoA" required placeholder="Valor númerico A" />
-            <input type="number" id="campoB" required placeholder="Valor numérico B" />
-            <button type="submit">Verificar</button>
-        </form>
-        <p class="mensagem-de-erro"></p>
-        <p class="mensagem-de-sucesso"></p>
+        <main>
+            <section class="loja">
+                <article class="sobre-nos">
+                    <a href="">
+                        <img src="./imagem/loja.jpg" alt="Foto da loja ">
+                    </a>
+                    <div class="text-sobre">
+                        <h2>Sobre nossa loja</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore eius reprehenderit
+                            eveniet ex modi sint ipsam totam mollitia consequatur sequi voluptatum consequuntur sit
+                            veritatex modi sint ipsam totam mollitia consequatur sequi voluptatum consequuntur sit
+                            veritatex modi sint ipsam totam mollitia consequatur sequi voluptatum consequuntur sit
+                            veritat
+                        </p>
+                    </div>
+                </article>
+                <article>
+                    <div class="minha-grid">
+                        <h2>Produtos</h2>
+                        <ul class="container-flex">
+                            <li><img src="./imagem/roupa01.jpg" alt="Body Coleção Lua">
+                                <h3>Kit body manga longa - 5 peças | Coleção Lua</h3>
+                                <p>
+                                    <h3>R$ 263,60</h3>
+                                </p>
+                                <button type="button">Adicionar ao Carrinho</button>
+                            </li>
+                            <li><img src="./imagem/roupa02.jpg" alt="Body Coleção Dia">
+                                <h3>Kit body manga curta - 5 peças | Coleção Dia</h3>
+                                <p>
+                                    <h3>R$ 323,50</h3>
+                                </p>
+                                <button type="button">Adicionar ao Carrinho</button>
+                            </li>
+                            <li><img src="./imagem/roupa03.jpg" alt="Body Coleção Luar">
+                                <h3>Kit body manga longa - 7 peças | Coleção Luar</h3>
+                                <p>
+                                    <h3>R$ 462,50</h3>
+                                </p>
+                                <button type="button">Adicionar ao Carrinho</button>
+                            </li>
+                            <li><img src="./imagem/roupa04.jpg" alt="Body Coleção Arco Íris">
+                                <h3>Kit body manga longa - 5 peças | Coleção Arco Íris</h3>
+                                <p>
+                                    <h3>R$ 263,60</h3>
+                                </p>
+                                <button type="button">Adicionar ao Carrinho</button>                            </li>
+
+                        </ul>
+                    </div>
+                </article>
+
+                <footer>
+                    <p>
+                        &copy; Meu Mundo Infantil | Moda Infantil - Todos os direitos reservados - 2024
+                    </p>
+                    <h4>
+                        Produzido por Giselle Ferraro
+                    </h4>
+                </footer>
+            </section>
+        </main>
     </div>
+
 
     <script src="./main.js"></script>
 </body>
+
 </html>
